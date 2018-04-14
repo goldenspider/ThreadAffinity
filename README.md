@@ -30,6 +30,6 @@ func SetThreadAffinityMask(s Handle, threadAffinityMask uint64) (err error) {
 	return
 }
 ```
-##cpu use
+## cpu use
 
 ![](test.png)
