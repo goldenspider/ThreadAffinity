@@ -1,6 +1,7 @@
 # ThreadAffinity
 Thread CPU Affinity test
-
+Update "golang.org/x/sys/windows"
+```go
 procGetCurrentThread                   = modkernel32.NewProc("GetCurrentThread")
 procSetThreadAffinityMask              = modkernel32.NewProc("SetThreadAffinityMask")
 
@@ -28,6 +29,4 @@ func SetThreadAffinityMask(s Handle, threadAffinityMask uint64) (err error) {
 	}
 	return
 }
-
-
-
+```
